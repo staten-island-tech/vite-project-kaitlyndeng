@@ -1,6 +1,5 @@
 import "../styles/style.css";
-import javascriptLogo from "../javascript.svg";
-import { setupCounter } from "../counter.js";
-
+import { candy } from "./candy";
 document.querySelector("#app").innerHTML = `
-  <h1>Hello</h1>`;
+  <h1>Yum</h1>`;
+console.log(candy);
