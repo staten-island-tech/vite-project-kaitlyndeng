@@ -1,9 +1,21 @@
 @import url(variables.css);
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: white
+html,
+body,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-
+:root {
+  --pink: rgb(250, 190, 200);
+  
+  --h1: 7.594rem;
+  --h2: 5.062rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+.main-header {
+  background-color: var --pink ;
+}
