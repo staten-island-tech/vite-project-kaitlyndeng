@@ -8,14 +8,38 @@ body,
   font-size: 62.5%;
 }
 :root {
-  --pink: rgb(250, 190, 200);
+  --dark-pink: #ff5faa;
+  --light-pink:#f58fbf;
+  --dark-brown: #190a05;
+  --red: #b10303;
   
+  --primary: var(--light-pink);
+  --secondary: var(--dark-brown);
+
   --h1: 7.594rem;
   --h2: 5.062rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
 }
+
 .main-header {
-  background-color: var --pink ;
+  background-color: var(--primary);
+  font-size: var(--h1);
+}
+.box {
+  background-color: var(--secondary);
+  height: 80vh;
+
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h1,
+h2,
+h3 {
+  text-align: center;
 }
