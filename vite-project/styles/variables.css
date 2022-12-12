@@ -5,3 +5,43 @@ h1,h2,h3{
     text-align: center;
     margin: 2rem;
 }
+:root {
+    --dark-pink: #ff5faa;
+    --light-pink:#f58fbf;
+    --dark-brown: #190a05;
+    --red: #b10303;
+  
+    --h1: 7.594rem;
+    --h2: 5.062rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
+  }
+  
+  .regular {
+    --primary: var(--light-pink);
+    --secondary: var(--dark-pink);
+  }
+  .secret {
+    --primary: var(--dark-brown);
+    --secondary: var(--red);
+  }
+  h2 {
+    font-size: var(--h2);
+  }
+  h3 {
+    font-size: var(--h3);
+  }
+  h4 {
+    font-size: var(--h4);
+  }
+  h5 {
+    font-size: var(--h5);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }

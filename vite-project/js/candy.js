@@ -62,6 +62,27 @@ const candy = [
     img: "https://www.nicepng.com/png/detail/113-1132132_jolly-rancher-chews-original.png",
     inStock: true,
   },
+  {
+    name: "Crunch",
+    category: "Chocolate",
+    price: 1.5,
+    img: "https://www.nicepng.com/png/detail/113-1132132_jolly-rancher-chews-original.png",
+    inStock: true,
+  },
+  {
+    name: "Kit-Kats",
+    category: "Chocolate",
+    price: 2,
+    img: "https://www.nicepng.com/png/detail/113-1132132_jolly-rancher-chews-original.png",
+    inStock: true,
+  },
+  {
+    name: "Starburst",
+    category: "Chewy",
+    price: 2,
+    img: "https://www.nicepng.com/png/detail/113-1132132_jolly-rancher-chews-original.png",
+    inStock: true,
+  },
 ];
 
 export { candy };
