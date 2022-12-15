@@ -65,6 +65,11 @@ h5 {
   margin: 20px;
   border-radius: 30px;
 }
+.image {
+  height: 40vh;
+  width: auto;
+}
+
 .filter {
   font-size: 2rem;
   padding: 30px;
