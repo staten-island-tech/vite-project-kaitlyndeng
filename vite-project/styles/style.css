@@ -84,3 +84,11 @@ h5 {
   height: auto;
   width: auto;
 }
+.btn {
+  border-radius: 30px;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  width: auto;
+}
