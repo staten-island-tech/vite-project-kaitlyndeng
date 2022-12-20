@@ -4,4 +4,5 @@ const DOMSelectors = {
   url: document.querySelector(".image"),
   desc: document.querySelector(".desc"),
   price: document.querySelector(".price"),
+  stock: document.querySelector(".stock"),
 };

@@ -1,6 +1,9 @@
 import "../styles/style.css";
 import { candy } from "./candy";
 
+candy.filter((candy.stock) =>
+if )
+  
 candy.forEach((card) =>
   DOMSelectors.option.insertAdjacentHTML(
     "beforeend",
@@ -9,16 +12,8 @@ candy.forEach((card) =>
     <img class="image" src="${card.url}">
     <h4 class="desc">${card.desc}</h4>
     <h5 class="price">${card.price}</h5>
-    <h5>In Stock</h5>
+    <h6></h6>
   </div> `
   )
 );
-let outOfStock = 0;
-
-function filterByID(candy) {
-  if (Number.isFinite(candy.id) && candy.id !== 0) {
-    return true;
-  }
-  outOfStock++;
-  return false;
-}
+ createCard()
