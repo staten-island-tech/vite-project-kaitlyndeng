@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  option: document.querySelector(".option"),
+  category: document.querySelector(".category"),
   name: document.querySelector(".name"),
   url: document.querySelector(".image"),
   desc: document.querySelector(".desc"),

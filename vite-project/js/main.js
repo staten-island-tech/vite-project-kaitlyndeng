@@ -1,19 +1,19 @@
 import "../styles/style.css";
-import { candy } from "./candy";
+import candy from "./candy";
 
-candy.filter((candy.stock) =>
-if )
-  
-candy.forEach((card) =>
-  DOMSelectors.option.insertAdjacentHTML(
+const DOMSelectors = {
+  card: document.getElementById("cards"),
+};
+
+candy.forEach((element) =>
+  DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<div class="option">
-    <h3 class="name">${card.name}</h3>
-    <img class="image" src="${card.url}">
-    <h4 class="desc">${card.desc}</h4>
-    <h5 class="price">${card.price}</h5>
+    <h3 class="name">${element.name}</h3>
+    <img class="image" src="${element.url}">
+    <h4 class="desc">${element.desc}</h4>
+    <h5 class="price">${element.price}</h5>
     <h6></h6>
   </div> `
   )
 );
- createCard()

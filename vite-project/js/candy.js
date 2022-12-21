@@ -97,4 +97,4 @@ const candy = [
   },
 ];
 
-export { candy };
+export default candy;

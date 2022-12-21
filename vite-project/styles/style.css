@@ -54,7 +54,6 @@ h5 {
 }
 .all-cards {
   background-color: var(--light-pink);
-  height: 80vh;
   font-size: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -75,15 +74,7 @@ h5 {
   padding: 30px;
   margin: 20px;
 }
-.option {
-  background-color: rgb(241, 205, 210);
-  border-radius: 30px;
-  align-items: center;
-  padding: 30px;
-  margin: 20px;
-  height: auto;
-  width: auto;
-}
+
 .btn {
   border-radius: 30px;
   align-items: center;
