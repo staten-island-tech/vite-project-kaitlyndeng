@@ -5,4 +5,5 @@ const DOMSelectors = {
   desc: document.querySelector(".desc"),
   price: document.querySelector(".price"),
   stock: document.querySelector(".stock"),
+  chewybtn: document.querySelector(".chewybtn"),
 };

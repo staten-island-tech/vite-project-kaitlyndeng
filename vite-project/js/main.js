@@ -17,3 +17,12 @@ candy.forEach((element) =>
   </div> `
   )
 );
+
+const chewy = document.querySelectorAll(`.btn`);
+chewy.forEach((button) => {
+  button.addEventListener("click", function (e) {});
+  document.querySelectorAll(candy.category);
+  candy.filter((element) => candy.category === "Chewy");
+  console.log(candy.category);
+});
+document.querySelectorAll(".btn").addEventListener("click".function(chewy));
