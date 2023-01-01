@@ -1,9 +1,8 @@
 const DOMSelectors = {
-  category: document.querySelector(".category"),
-  name: document.querySelector(".name"),
-  url: document.querySelector(".image"),
-  desc: document.querySelector(".desc"),
-  price: document.querySelector(".price"),
-  stock: document.querySelector(".stock"),
-  chewybtn: document.querySelector(".chewybtn"),
+  display: document.getElementbyId("display"),
+  pink: document.getElementbyId("pink"),
+  yellow: document.getElementbyId("yellow"),
+  button: document.getElementbyId("btn")
 };
+
+export {DOMSelectors};

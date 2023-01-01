@@ -1,28 +1,79 @@
 import "../styles/style.css";
-import candy from "./candy";
+import {candy} from "./candy";
+import {DOMSelectors} from "./dom";
+
+function card (candy) {
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
+    <h2 class="name">${candy.name}</h2>
+    <div class="img"> <img class="image" src="${candy.img}"/> </div>
+    <h3 class="desc">${candy.desc}</h3>
+    <h4 class="price">${candy.price}</h4>
+  </div> `
+  );
+}
+
+function all() {
+  candy.forEach((e) => {
+    card(e);
+  });
+}
+
+all();
+
+function choco() {
+  DOMSelectors.display.innerHTML = "";
+  candy
+  .filter((e) => e.category === "Chocolate Candy")
+  .forEach((e) => {
+    card(e);
+  });
+}
+
+DOMSelectors.chocoFilter.addEventListener("click", function () {
+  choco();
+});
+
+function hard() {
+  DOMSelectors.display.innerHTML = "";
+  candy
+  .filter((e) => e.category === "Hard Candy")
+  .forEach((e) => {
+    card(e);
+  });
+}
+
+DOMSelectors.hardFilter.addEventListener("click", function () {
+  hard();
+});
+
+function chewy() {
+  DOMSelectors.display.innerHTML = "";
+  candy
+  .filter((e) => e.category === "Chewy Candy")
+  .forEach((e) => {
+    card(e);
+  });
+}
+
 
 const DOMSelectors = {
   card: document.getElementById("cards"),
 };
 
-candy.forEach((element) =>
-  DOMSelectors.card.insertAdjacentHTML(
-    "beforeend",
-    `<div class="option">
-    <h3 class="name">${element.name}</h3>
-    <img class="image" src="${element.url}">
-    <h4 class="desc">${element.desc}</h4>
-    <h5 class="price">${element.price}</h5>
-    <h6></h6>
-  </div> `
-  )
-);
-
-const chewy = document.querySelectorAll(`.btn`);
-chewy.forEach((button) => {
-  button.addEventListener("click", function (e) {});
-  document.querySelectorAll(candy.category);
-  candy.filter((element) => candy.category === "Chewy");
-  console.log(candy.category);
+DOMSelectors.chewyFilter.addEventListener("click", function () {
+  chewy();
 });
-document.querySelectorAll(".btn").addEventListener("click".function(chewy));
+
+DOMSelectors.theme.addEventListener("click", function () {
+  if(document.body.classList.contains("pink")){
+    document.body.classList.add("yellow");
+    document.body.classList.remove("pink");
+    DOMSelectors.theme.innerHTML = "pink";
+  } else {
+    document.body.classList.add("pink");
+    document.body.classList.remove("yellow");
+    DOMSelectors.theme.innerHTML = "yellow";
+  }
+  });

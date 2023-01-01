@@ -6,12 +6,17 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: var (--primary);
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
 }
 :root {
-  --dark-pink: #ff5faa;
+  --pink: #ff5faa;
   --light-pink:#f58fbf;
-  --dark-brown: #190a05;
-  --red: #b10303;
+  --yellow: #ffc400;
+  --light-yellow: #ffe5ac;
 
   --h1: 7.594rem;
   --h2: 5.062rem;
@@ -20,13 +25,13 @@ body,
   --h5: 1.5rem;
 }
 
-.regular {
+.pinktheme {
   --primary: var(--light-pink);
-  --secondary: var(--dark-pink);
+  --secondary: var(--pink);
 }
-.secret {
-  --primary: var(--dark-brown);
-  --secondary: var(--red);
+.yellowtheme {
+  --primary: var(--yellow);
+  --secondary: var(--light-yellow);
 }
 h2 {
   font-size: var(--h2);
@@ -82,4 +87,6 @@ h5 {
   margin: 10px;
   height: auto;
   width: auto;
+  text-align: center;
+  display: block;
 }
